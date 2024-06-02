@@ -29,7 +29,7 @@ function splitArray <T>(array: Array<T>, numParts: number) {
 function ReviewColumn({reviews, className, reviewClassName, msPerPixel}:{reviews:string[], className? :string, reviewClassName? : (reviewIndex: number)=> string, msPerPixel? : number}) {
     const columnRef = useRef<HTMLDivElement | null>(null)
     
-    return <div ref={columnRef} className={cn("animate-marquee space-y-8 py-4", className)}>
+    return <div ref={columnRef} className={cn("animate-marquee space-y-8 py-4", className)} style={{'--marquee-duration': duration}as React.CSSProperties}>
 
     </div>
 }
