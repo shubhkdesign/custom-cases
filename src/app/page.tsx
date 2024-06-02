@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Phone from "@/components/Phone";
+import { Reviews } from "@/components/Reviews";
 import { Check, Star } from "lucide-react";
 import Image from "next/image";
 
@@ -184,7 +185,7 @@ export default function Home() {
         </MaxWidthWrapper>
 
         <div className="pt-16">
-          {/* <Reviews /> */}
+          <Reviews />
         </div>
       </section>
     </div>
